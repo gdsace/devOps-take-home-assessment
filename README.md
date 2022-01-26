@@ -1,10 +1,10 @@
 # GoBusiness - Bring home assessment
 
 ## Instruction
-This repository contains a simple srping boot program written in Kotlin. The service responds with "pong" when POSTMAN triggers it.
+This repository contains a simple Spring Boot program written in Kotlin. The service responds with "pong" when POSTMAN triggers a GET request to `/api/ping`. The service listens on port `8080`.
 
 ## Pre-requisites
-You will need to following installed:
+You will need the following installed:
 | Package | Detail |
 | ------ | ------ |
 | Docker | for image building/publishing (check with docker version) |
@@ -14,10 +14,10 @@ You will need to following installed:
 ## Get Started
 
 - Clone this repository
-- Create your own repository on Github
-- Set your local repository's remote to pount to your Github repository
-- Make your changes locally accordding to your tasks below
-- Push to your Github repository
+- Create your own repository on GitHub
+- Set your local repository's remote to point to your GitHub repository
+- Make your changes locally according to your tasks below
+- Push to your GitHub repository
 
 # Challenge 1
 
@@ -25,7 +25,7 @@ You will need to following installed:
 ## Task
 Create a `Dockerfile` in the root directory according to any best practices you may know about.
 
-##Deliverable
-Running `docker build -t devops/webapp:latest .` should result in a successful image named `devops/webapp:latest` which is reflected in the output of `docker imgae ls`.
+## Deliverables
+Running `docker build -t devops/webapp:latest .` should result in a successful image named `devops/webapp:latest` which is reflected in the output of `docker image ls`.
 
-Running `docker -ir -p 8080:8080 devop/webapp:latest` should result in the same behaviour as running `RUN ./gradlew clean bootJar`
+Running `docker run -p 8080:8080 devop/webapp:latest` should result in the same behaviour as running `RUN ./gradlew clean bootRun`
