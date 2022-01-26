@@ -19,4 +19,13 @@ You will need to following installed:
 - Make your changes locally accordding to your tasks below
 - Push to your Github repository
 
-## Challenge 1
+# Challenge 1
+
+# Containerisation
+## Task
+Create a `Dockerfile` in the root directory according to any best practices you may know about.
+
+##Deliverable
+Running `docker build -t devops/webapp:latest .` should result in a successful image named `devops/webapp:latest` which is reflected in the output of `docker imgae ls`.
+
+Running `docker -ir -p 8080:8080 devop/webapp:latest` should result in the same behaviour as running `RUN ./gradlew clean bootJar`
